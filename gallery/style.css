@@ -1,0 +1,54 @@
+*{
+  margin: 3px;
+  padding: 0;
+}
+
+.top{
+  width: 100vw;
+  height: 20vh;
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+}
+
+h1{
+  color: #2d6780;
+  font-size: 5vw;
+}
+
+.container{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 20vh;
+  grid-auto-flow: dense;
+  grid-gap: 3px;
+  border-top: 10px solid #ded59e;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.horizontal{
+  grid-column: span 2;
+}
+
+.vertical{
+  grid-row: span 2;
+}
+
+.big{
+  grid-column: span 5;
+  grid-row: span 3;
+}
+
+
+@media screen and (max-width: 500px){
+
+    .container{
+      display: block;
+  }
+}
