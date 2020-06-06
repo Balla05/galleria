@@ -1,2 +1,3 @@
 # galleria
-responsive css gallery
+
+A very simple responsive css gallery using CSS grids. 
